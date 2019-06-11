@@ -1,0 +1,359 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    width: 100%;
+    height: 200px;
+}
+
+.topo{
+    width: 100%;
+    height: 200px;
+    background-color: #44b7ff;
+}
+
+.header{
+    margin-right: auto;
+    margin-left: auto;
+    width: 590px;
+    height: 200px;
+}
+.titulo{
+    width: 390px;
+    height: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: #000000;
+    font-size: 32px;;
+    margin-top: 80px;
+    float: left;
+}
+
+.logo{
+    width: 200px;;
+    height: 100px;
+    float: left;
+    background-image: url(../images/car-logo.png);
+    background-size: cover;
+    margin-top: 60px;
+}
+
+.container{
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+}
+
+.inserirCadastro{
+    width:500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 10px #000000;
+    border-radius: 5px;
+}
+
+.inputs{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #000000;
+    margin-left: 110px;
+    padding-top: 40px;
+    display: block;
+}
+
+.inputs p{
+    margin-top: 40px;
+    display: block;
+}
+
+.inputs input{
+    width: 200px;
+    color: #000000;
+    margin-left: 80px;
+    margin-top: -22px;
+    float: left;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.botoes{
+    width: 55%;
+    height: 100px;
+    padding-left: 145px;
+}
+
+.btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 85px;
+    height: 30px;
+    background-color: #44b7ff;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.btn:hover{
+    background-color: #2982ba;
+    color: #ffffff;
+}
+
+button:focus {outline:0;}
+
+.botao2{
+    margin-right: 20px;
+}
+
+/* Margem da tabela do formulário */
+.container-tabela{
+    margin: 30px;
+    margin-top: 80px;
+}
+
+/* Cor das letras do cabeçalho da tabela do formulário */
+.container-tabela table, .areaTabela table{
+    background-color: #1668C4;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 100%;  
+}
+
+/* Tamanho da letra do cabeçalho da tabela do formulario */
+.container-tabela thead tr, .tabela thead tr{
+    font: bold 16px arial;
+}
+
+/* Tamanho da letra do conteudo da tabela do formulario */ 
+.container-tabela tbody tr, .tabela thead tr{
+    background-color: #BBDEFB;
+    color: #000000;
+    font: normal 14px arial;
+}
+
+
+.container-tabela tbody td , .tabela tbody td{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    text-indent:1ch;
+    background-color: rgb(107, 144, 185);
+}
+
+.container-tabela tbody tr:hover{
+    background-color: #0A305A;
+    color: #FFFFFF;
+}
+
+.conteiner-modal, .conteiner-comprovante, .conteiner-relatorio, .conteiner-editar{
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    margin-top: -100000px;
+    visibility: hidden;
+}
+
+/* Exibe a tabela de Novo Aluno encima da tabela do formulario */
+.conteiner-modal.exibirModal, .conteiner-comprovante.exibirModal, .conteiner-relatorio.exibirModal, .conteiner-editar.exibirModal{
+    margin-top: 80px;
+    transition: 1s;
+    visibility: visible;
+}
+
+.formulario hr{
+    width: 50%;
+}
+
+/* Modelo das caixas da tabela do Novo Aluno */
+.modal, .modal_relatorio, .modal_editar{
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 40vh;
+    margin: 10vh auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #000000;
+    border-radius: 5px;
+}
+
+/* Mesclando o tamanho de cada caixa da tabela do Novo Aluno */
+.formulario, .formulario2{
+    margin-left: 50px;
+    width: 100%;
+    height: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+ 
+.textos{
+    width:100%;
+    height: 100%;
+}
+
+.textos p{
+    margin-top: 15px;
+}
+
+.textos2 p{
+    margin-top: 40px;
+}
+
+.formulario input {
+    width: 200px;
+    height: 15px;
+    text-indent: 1ch;
+    font: normal 15px arial;
+}
+
+.titulo-formulario{
+    width:inherit;
+    height: 50px;
+    background: #1668C4;
+    border-radius: 5px 5px 0px 0px;
+    font: bold 20px/50px arial;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.acao-formulario,.acao-formulario2, .acao-formulario3{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.acao-formulario2{
+    margin-top: -0px;
+}
+
+.acao-formulario3{
+    margin-top: 100px;
+}
+.botao, .botao2{
+    background-color:#FFFFFF;
+    border: 1px solid  #1668C4;
+    width: 70px;
+    height: 20px;
+    border-radius: 5px;
+    font: bold 15px arial;
+    color: #1668C4;
+    box-shadow: 0px 0px 3px black;
+    cursor: pointer; 
+}
+
+.textos hr{
+    width: 75%;
+}
+
+.acao-formulario button{
+    margin: 20px;
+}
+
+.botao:hover, .botao2:hover{
+    background: #1668C4;
+    color: #FFFFFF;
+}
+
+.acoes{
+    font-family: Verdana;
+    font-size: 13px;
+    color: #ffffff;
+    width: 55px;
+    height: 20px;
+    background-color: #1668C4;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.acoes:hover{
+    background-color: rgb(9, 79, 160);
+    font-weight: bolder;
+}
+
+.excluir{
+    background-color: #cc0000;
+}
+
+.excluir:hover{
+    background-color: #870000;
+}
+
+.editar{
+    background-color: rgb(0, 167, 148);
+}
+
+.editar:hover{
+    background-color: rgb(0, 110, 97);
+}
+
+.comp_title{
+    width: 95%;
+    margin-left: 30px;
+    height:100px;
+    font-family: "OratorStd";
+    font-size: 26px;
+    color: #000000;
+    padding-top: 30px;
+    height: 30px;
+}
+
+.comp_title hr{
+    width: 75%;
+}
+
+.btn_relatorio  {
+    width: 97%;
+    height: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-color: #000000;
+    font-family: Verdana;
+    font-size: 20px;    
+    color: #FFFFFF;
+    background-color: rgb(48, 110, 180);
+}
+
+.btn_relatorio:hover{
+    font-weight: bolder;
+    background-color: #0A305A;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.conteiner-relatorio{
+    width: 100%;
+    height: 600px;
+      
+}
+
+.modal_relatorio{
+    width: 65%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rel_title{
+    font-family: "OratorStd";
+    font-size: 38px;
+    padding: 10px;
+}
+
+.areaTabela{
+    width: 90%;
+    height: 90%;
+    padding: 50px;
+}
+
+.rel_title button{
+    margin-left: 500px;
+}

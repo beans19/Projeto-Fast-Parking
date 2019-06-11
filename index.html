@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Fast Parking</title>
+</head>
+<body onload="mostraPatio()">
+    <!-- Topo da Página (Título e Logo)-->
+    <div class="topo">
+        <div class="header">
+            <div class="titulo">Sistema FastParking</div>
+            <div class="logo">
+            </div>
+            <div class="btn_relatorio_area">
+                <button class="btn_relatorio" id="btn_relatorio">
+                    RELATÓRIO
+                </button>
+            </div>  
+        </div>
+    </div>
+
+    <!-- Corpo da página-->
+    <div class="container">
+        <div class="inserirCadastro">
+            <div class="inputs">
+                <p>Nome: </p> <input type="text" placeholder="Nome" id="modelo">
+                <p>Placa: </p><input type="text" placeholder="Placa" id="placa"></p>
+            </div>
+            <div class="botoes">
+                <button class="btn" id="adicionar">Adicionar</button>
+                <button class="btn" id="precos">Preços</button>               
+            </div>
+        </div>
+        <!-- Tabela array -->
+        <div class="container-tabela">
+            <table>
+                <!-- Cabeçalho do menu-->
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Placa</th>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <!-- Texto inserido ao add aluno-->
+                <tbody class="registros" id="registros">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="conteiner-modal">
+        <div class="modal">
+            <!-- Titulo da tabela -->
+            <div class="comp_title">
+                Preços
+                <hr>
+            </div>
+            <!-- Caixas de textos -->
+            <div class="formulario">
+                <div class="textos textos2">
+                    <p>Primeira Hora: <input type="text" id="primeiraHora" placeholder="Primeira Hora"/></p>
+                    <p>Demais Horas: <input type="text" id="demaisHoras" placeholder="Demais Horas"/></p>
+                </div>
+            </div>
+            <!-- Botões Salvar e Fechar -->
+            <div class="acao-formulario">
+                <button class="botao" id="salvar">Salvar</button>
+                <button class="botao" id="fechar">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteiner-comprovante">
+        <div class="modal">
+            <!-- Titulo da tabela -->
+            <div class="comp_title">
+                Comprovante
+                <hr>
+            </div>
+            <!-- Caixas de textos -->
+            <div class="formulario2">
+                <div class="textos">
+                <p>Nome: <i id="comp_modelo"></i></p>
+                <hr>
+                <p>Placa: <i id="comp_placa"></i></p>
+                <hr>
+                <p>Data: <i id="comp_data"></i></p>
+                <hr>
+                <p>Hora: <i id="comp_hora"></i></p>
+                <hr>
+                </div>
+            </div>
+            <!-- Botões Salvar e Fechar -->
+            <div class="acao-formulario2">
+                <button class="botao2">Imprimir</button>
+                <button class="botao2" id="cancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteiner-relatorio">
+        <div class="modal_relatorio">
+            <!-- Titulo da tabela -->
+            <div class="rel_title">
+                RELATÓRIO <button id="close" class="btn">Fechar</button>
+                <hr>
+            </div>
+            <!-- Caixas de textos -->
+            <div class="areaTabela">
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Entrada Data/Hora</th>
+                            <th>Saída Data/Hora</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody class="registros" id="registros2">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                Total: <label id="labelTotal"></label>
+                            </td>
+                            <td>
+                                <label id="valor"></label>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteiner-editar">
+        <div class="modal_editar">
+            <!-- Titulo da tabela -->
+            <div class="comp_title">
+                Editar
+                <hr>
+            </div>
+            <!-- Caixas de textos -->
+            <div class="formulario2">
+                <div class="textos">
+                    <p>Nome: </p> <input type="text" placeholder="Nome" id="modelo_edit">
+                    <p>Placa: </p><input type="text" placeholder="Placa" name="placa_veiculo" id="placa_edit"></p>
+                </div>
+            </div>
+            <!-- Botões Salvar e Fechar -->
+            <div class="acao-formulario3">
+                <button class="botao2">Imprimir</button>
+                <button class="botao2" id="cancelar2">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
