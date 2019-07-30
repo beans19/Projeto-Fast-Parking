@@ -25,15 +25,11 @@ const $editar = document.querySelector(".conteiner-editar")
 let carroEditar;
 const pipe = (...fns) => arg => fns.reduce((val, fn) => fn(val), arg);
 
-const abrirModal = (el) =>{
-    el.classList.add("exibirModal");
-}
+const abrirModal = (el) => el.classList.add("exibirModal");
 
 const fecharModal = (el) => el.classList.remove("exibirModal");
 
-const novoCadastro = () =>{
-    abrirModal($modal);
-}
+const novoCadastro = () => abrirModal($modal);
 
 const fechar = () => {
     fecharModal($modal);
